@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "git-azure-test/1.0.0": {
+        "runtime": {
+          "git-azure-test.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "git-azure-test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

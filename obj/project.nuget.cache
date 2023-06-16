@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AxdmXtykabA8sobRpn6bd8+chxe/XAdRecpLhkDgQlzQZ6Pp0yteEnPr87uiY/x5Smccjz4+vGXnhN0PkiKH9A==",
+  "success": true,
+  "projectFilePath": "/Volumes/Domestic/Projects/azure/git-azure-test/git-azure-test.csproj",
+  "expectedPackageFiles": [
+    "/Users/manikantasanthoshkuchimanchi/.nuget/packages/microsoft.netcore.app.ref/6.0.16/microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "/Users/manikantasanthoshkuchimanchi/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.16/microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "/Users/manikantasanthoshkuchimanchi/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.16/microsoft.netcore.app.host.osx-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
