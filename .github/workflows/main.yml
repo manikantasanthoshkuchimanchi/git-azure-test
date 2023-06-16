@@ -6,6 +6,10 @@ on:
     branches:
     - master
     
+env:
+  AZURE_WEBAPP_NAME: az-net-github-dp
+  AZURE_WEBPAPP_PACKAGE_LOCATION: "./publish"
+    
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -23,4 +27,11 @@ jobs:
         run: dotnet build ./git-azure-test.csproj --configuration Release --no-restore
         
       - name: Publish
-        run: dotnet publish ./git-azure-test.csproj --configuration Release --no-build
+        run: dotnet publish ./git-azure-test.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBPAPP_PACKAGE_LOCATION }}'
+
+      - name: Deploy to Azure web app
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBPAPP_name }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ${{ env.AZURE_WEBPAPP_PACKAGE_LOCATION }}
